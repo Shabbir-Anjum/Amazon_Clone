@@ -8,11 +8,11 @@ export default function Hero() {
     <>
         <section className=' h-screen'>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper h-[70%]">
-        <SwiperSlide className="bg-[url('../images/Swiper/1.jpg')]"></SwiperSlide>
+        <SwiperSlide style={{ backgroundImage: "linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1)), url('../images/Swiper/1.jpg')" }}></SwiperSlide>
         <SwiperSlide className="bg-[url('../images/Swiper/2.jpg')]"></SwiperSlide>
         <SwiperSlide className="bg-[url('../images/Swiper/3.jpg')]"></SwiperSlide>
         <SwiperSlide className="bg-[url('../images/Swiper/4.jpg')]"></SwiperSlide>
-        <SwiperSlide className="bg-[url('../images/Swiper/5.jpg')]"></SwiperSlide>
+        <SwiperSlide style={{ backgroundImage: "linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.1)), url('../images/Swiper/5.jpg')" }}></SwiperSlide>
         <SwiperSlide className="bg-[url('../images/Swiper/6.jpg')]"></SwiperSlide>
       </Swiper>
         </section>
