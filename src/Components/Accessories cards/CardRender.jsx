@@ -5,7 +5,7 @@ export default function CardRender({CardData}) {
     <>
       {CardData.map((value, index) => ( 
         <div key={value.id} className='bg-white p-4 z-50'>
-          <h2 className='text-xl font-Roboto'>{value.cardName}</h2>
+          <h2 className=' font-Roboto font-bold py-1'>{value.cardName}</h2>
           {value.data.length === 3 && (
             <div className='full-width'>
               <img src={value.data[2].src} alt="error" />

@@ -5,14 +5,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Keyboard, Scrollbar, Navigation} from 'swiper/modules';
-export default function BooksSwiper() {
+export default function BooksSwiper({title, images}) {
   return (
-    <div className='p-4 bg-white'>
-        <p>Best Seller in Books</p>
+
+    <div className='p-4 bg-white my-4'>
+        <p className=' font-Roboto font-bold'>{title}</p>
         <Swiper
         slidesPerView={1}
         centeredSlides={false}
         slidesPerGroupSkip={1}
+        spaceBetween={10}
         grabCursor={true}
         keyboard={{
           enabled: true,
@@ -26,23 +28,13 @@ export default function BooksSwiper() {
         scrollbar={true}
         navigation={true}
         modules={[Keyboard, Scrollbar, Navigation]}
-        className="mySwiper py-4 px-2"
+        className="mySwiper py-4"
       >
-        
-        <SwiperSlide><img src="../images/books/B1.jpg" className=' h-40'/></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B9.jpg" className=' h-40'/></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B2.jpg"  className=' h-40'/></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B3.jpg"  className=' h-40'/></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B4.jpg"  className=' h-40'/></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B5.jpg"  className=' h-40'/></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B6.jpg"  className=' h-40'/></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B7.jpg"  className=' h-40'/></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B8.jpg"  className=' h-40'/></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B9.jpg"  className=' h-40'/></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B10.jpg" className=' h-40' /></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B11.jpg" className=' h-40' /></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B12.jpg" className=' h-40' /></SwiperSlide>
-        <SwiperSlide><img src="../images/books/B13.jpg" className=' h-40' /></SwiperSlide>
+        {images.map((imageUrl, index) => (
+            <SwiperSlide key={index}>
+              <img src={imageUrl} alt={`Slide ${index + 1}`} className=" object-cover block w-full h-48" />
+            </SwiperSlide>
+          ))}
       </Swiper>
     </div>
   )

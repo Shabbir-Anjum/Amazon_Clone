@@ -79,3 +79,61 @@ const CardData2=[ {
     link: '#'
 },]
 export default CardData2
+ export const CardData3=[
+    {
+        id: 1,
+        cardName: 'Gamming Accessories',
+        data:[
+            {
+                src: '../images/Cards/gaming.jpg',
+                name:'Headsets'
+            },
+        ],
+        link: '#'
+    },
+    {
+        id: 2,
+        cardName: 'Gamming Accessories',
+        data:[
+            {
+                src: '../images/Cards/sport1.jpg',
+                name:'Headsets'
+            },
+            {
+                src: '../images/Cards/sport2.jpg',
+                name:'Headsets'
+            },
+            {
+                src: '../images/Cards/sport3.jpg',
+                name:'Headsets'
+            },
+            {
+                src: '../images/Cards/sport1.jpg',
+                name:'Headsets'
+            },
+        ],
+        link: '#'
+    },
+    {
+        id: 3,
+        cardName: 'Gamming Accessories',
+        data:[
+            {
+                src: '../images/Cards/Fur.jpg',
+                name:'Headsets'
+            },
+        ],
+        link: '#'
+    },
+    {
+        id: 4,
+        cardName: 'Gamming Accessories',
+        data:[
+            {
+                src: '../images/Cards/lap.jpg',
+                name:'Headsets'
+            },
+        ],
+        link: '#'
+    },
+]
