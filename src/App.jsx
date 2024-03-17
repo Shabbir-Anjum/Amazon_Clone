@@ -5,14 +5,20 @@ import './App.css'
 import Header from './Components/Header/Header'
 import Hero from './Components/Hero/Hero'
 import Accessories_Cards from './Components/Accessories cards/Accessories_Cards'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-   <Header/>
-   <Hero/>
+     <Header/>
+    <BrowserRouter>
+    <Routes>
+      <Route exact path='/' element={<Hero/>}/>
+    </Routes>
+    </BrowserRouter>
+  
+   
     </>
   )
 }

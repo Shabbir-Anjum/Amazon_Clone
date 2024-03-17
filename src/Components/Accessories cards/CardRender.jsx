@@ -4,7 +4,7 @@ export default function CardRender({CardData}) {
   return (
     <>
       {CardData.map((value, index) => ( 
-        <div key={value.id} className='bg-white p-4'>
+        <div key={value.id} className='bg-white p-4 z-50'>
           <h2 className='text-xl font-Roboto'>{value.cardName}</h2>
           {value.data.length === 3 && (
             <div className='full-width'>

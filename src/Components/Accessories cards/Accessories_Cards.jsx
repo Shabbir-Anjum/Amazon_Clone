@@ -9,12 +9,11 @@ export default function Accessories_Cards() {
   return (
     <>
     
-    <div className="grid grid-cols-4 gap-4 bg-gradient-to-b from-transparent to-moonColor p-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4  -mt-96 z-30  p-4">
       <CardRender CardData={CardData}/>
-    </div>
-    <div className="grid grid-cols-4 gap-4  bg-moonColor p-4">
       <CardRender CardData={CardData2}/>
     </div>
+    
   
     </>
   );

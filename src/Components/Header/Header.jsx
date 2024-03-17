@@ -13,12 +13,13 @@ export default function Header() {
                     <div className=' flex items-center gap-1  hover:border p-1 border-transparent'>
 
 
-                        <div className=' text-gray-400 text-sm'>
-                            <span className='pl-4'> Deliver to</span>
+                        <div className=' text-gray-400 flex items-center gap-2'>
+                        <FontAwesomeIcon icon={faLocationDot} className='  text-2xl' />
+                           
 
-                            <div className='flex'>
-                                <FontAwesomeIcon icon={faLocationDot} className='mr-2 h-3  text-3xl' />
-                                <span className=' font-Roboto text-white text-base'>Pakistan</span>
+                            <div className='flex flex-col'>
+                            <div className='text-sm'> Deliver to</div>
+                            <div className=' font-Roboto text-white text-base'>Pakistan</div>
                             </div>
 
                         </div>
@@ -56,9 +57,9 @@ export default function Header() {
                         <div className='text-xs'>Returns</div>
                         <div className=' font-Roboto font-bold'>&Orders</div>
                     </div>
-                    <div className=' hover:border p-2 border-transparent' >
+                    <div className=' hover:border p-2 border-transparent flex items-center' >
                         <FontAwesomeIcon icon={faCartShopping} className=' text-3xl'/>
-                        <span className='font-Roboto font-bold'> Cart</span>
+                        <div className='font-Roboto font-bold'> Cart</div>
                     </div>
                 </div>
                 <div className='flex items-center h-12 p-3 bg-navColor text-white '>
@@ -67,7 +68,7 @@ export default function Header() {
                         <div>All</div>
                     </div>
                     
-                    <ul className='flex gap-8 mt-3 items-center'>
+                    <ul className='flex gap-8 items-center'>
                         <li className=' hover:border p-2 border-transparent' >Today's Deal</li>
                         <li className=' hover:border p-2 border-transparent' >Customer Service</li>
                         <li className=' hover:border p-2 border-transparent' >Resgistry</li>
