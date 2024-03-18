@@ -15,3 +15,16 @@ const BookImages=[
         "../images/books/B13.jpg",
 ]
 export default BookImages
+export const ToyesImages=[
+    "../images/Toyes/T1.jpg",
+    "../images/Toyes/T2.jpg",
+    "../images/Toyes/T3.jpg",
+    "../images/Toyes/T4.jpg",
+    "../images/Toyes/T5.jpg",
+    "../images/Toyes/T6.jpg",
+    "../images/Toyes/T7.jpg",
+    "../images/Toyes/T5.jpg",
+    "../images/Toyes/T2.jpg",
+    "../images/Toyes/T1.jpg",
+    "../images/Toyes/T5.jpg",
+]

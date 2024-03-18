@@ -6,7 +6,7 @@ import { Navigation } from 'swiper/modules';
 import Accessories_Cards from '../Accessories cards/Accessories_Cards';
 import Swiperr from './Swiperr';
 import BooksSwiper from './BooksSwiper';
-import BookImages from './BookImages';
+import BookImages, { ToyesImages } from './BookImages';
 import KitchenImages from './KitchenImages';
 import { CardData3 } from '../Accessories cards/CardData2';
 import CardRender from '../Accessories cards/CardRender';
@@ -22,6 +22,8 @@ export default function Hero() {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
           <CardRender CardData={CardData3}/>
           </div>
+          
+          <BooksSwiper images={ToyesImages} titile='Best Seller in Toyes'/>
       
           
           </div>

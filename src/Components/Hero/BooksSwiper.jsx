@@ -30,10 +30,11 @@ export default function BooksSwiper({title, images}) {
         modules={[Keyboard, Scrollbar, Navigation]}
         className="mySwiper py-4"
       >
+
         {images.map((imageUrl, index) => (
-            <SwiperSlide key={index}>
-              <img src={imageUrl} alt={`Slide ${index + 1}`} className=" object-cover block w-full h-48" />
-            </SwiperSlide>
+            <SwiperSlide key={index} style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            {/* You can add content here if needed */}
+          </SwiperSlide>
           ))}
       </Swiper>
     </div>
