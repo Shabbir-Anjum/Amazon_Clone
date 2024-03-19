@@ -6,6 +6,7 @@ import Header from './Components/Header/Header'
 import Hero from './Components/Hero/Hero'
 import Accessories_Cards from './Components/Accessories cards/Accessories_Cards'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
@@ -17,8 +18,7 @@ function App() {
       <Route exact path='/' element={<Hero/>}/>
     </Routes>
     </BrowserRouter>
-  
-   
+    <Footer/>
     </>
   )
 }

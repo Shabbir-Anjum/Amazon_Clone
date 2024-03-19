@@ -10,10 +10,11 @@ import BookImages, { ToyesImages } from './BookImages';
 import KitchenImages from './KitchenImages';
 import { CardData3 } from '../Accessories cards/CardData2';
 import CardRender from '../Accessories cards/CardRender';
+import Footer from '../Footer/Footer';
 export default function Hero() {
   return (
     <>
-        <section className='h-screen bg-moonColor container w-[100%]'>
+        <section className=' bg-moonColor container w-[100%]'>
           <Swiperr/>
           <div className=' p-4'>
           <Accessories_Cards/>
@@ -29,7 +30,8 @@ export default function Hero() {
           </div>
          
         </section>
-        
+      
+       
     </>
   )
 }

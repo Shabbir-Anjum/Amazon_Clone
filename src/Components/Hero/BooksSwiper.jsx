@@ -32,9 +32,11 @@ export default function BooksSwiper({title, images}) {
       >
 
         {images.map((imageUrl, index) => (
-            <SwiperSlide key={index} style={{ backgroundImage: `url(${imageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-            {/* You can add content here if needed */}
-          </SwiperSlide>
+            <SwiperSlide key={index} >
+              <div>
+            <img src={imageUrl} alt="error" className=' object-fill h-auto w-auto'/>
+            </div>
+            </SwiperSlide>
           ))}
       </Swiper>
     </div>
