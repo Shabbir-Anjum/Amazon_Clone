@@ -20,7 +20,7 @@ export default function Hero() {
           <Accessories_Cards/>
           <BooksSwiper images={BookImages} titile='Best Seller in Books'/>
           <BooksSwiper images={KitchenImages} titile='Best Seller in Books'/>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 ">
           <CardRender CardData={CardData3}/>
           </div>
           

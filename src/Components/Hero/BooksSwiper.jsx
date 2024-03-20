@@ -11,7 +11,7 @@ export default function BooksSwiper({title, images}) {
     <div className='p-4 bg-white my-4'>
         <p className=' font-Roboto font-bold'>{title}</p>
         <Swiper
-        slidesPerView={1}
+        
         centeredSlides={false}
         slidesPerGroupSkip={1}
         spaceBetween={10}
@@ -20,6 +20,14 @@ export default function BooksSwiper({title, images}) {
           enabled: true,
         }}
         breakpoints={{
+          260:{
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+          360:{
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+          },
           769: {
             slidesPerView: 7,
             slidesPerGroup: 7,

@@ -23,10 +23,12 @@ export default {
 
         blackColor: "#000",
         
-        greenColor: "#007936",
-        redColor: "#cc3433",
-        darkColor: '#000',
-        darkColorLight: "#171717",
+        amazon_blue: "#131921",
+        amazon_light: "#232F3E",
+        whiteText: "#ffffff",
+        lightText: "#ccc",
+        quantity_box: "#F0F2F2",
+        footerBottom: "#131A22",
       }
     },
     keyframes:{
